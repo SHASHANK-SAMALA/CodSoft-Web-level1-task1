@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatble" content="IE=edge">
+        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+        <title>Portfolio | Shashank Samala</title>
+
+        <link rel="icon" href="images\url.png" type="image/x-icon">
+        <!-- box icons  -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- custom css-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#certificates">Achievements</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- home section design -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,It's Me</h3>
+                <h1>Shashank Samala</h1>
+                <!-- <h3>And I'm a <span>Student</span></h3> -->
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <h3>Explore my digital space where curiosity meets code.</h3>
+                <div class="social-media">
+                    <a href="https://github.com/SHASHANK-SAMALA"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/shashank-samala/"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://x.com/ShashankSamala2"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/shashank_samala/"><i class='bx bxl-instagram-alt' ></i></a>
+                </div>
+                <a href="images/my_resume1.pdf" class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images/home3.png" alt="">
+            </div>
+        </section>
+
+        <!-- about section design -->
+        <section class="about" id="about">
+            <div class="about-img" id="circular-img">
+                <img src="images/home3.png" alt="" >
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Passionate KMIT student</h3>
+                <p>Coding enthusiast, and problem 
+                    solver dedicated to mastering technology. I thrive on 
+                    xploring new tech horizons, consistently seeking opportunities to 
+                    innovate, learn, and contribute meaningfully to the world of software
+                     development. Eager to collaborate with like-minded individuals and engage 
+                     in projects that challenge and inspire. Let's build solutions, push boundaries, and make a positive impact together!</p>
+                <button onclick="showEducation()" class="btn">My Education</button>
+            </div>
+        </section>
+
+        <!-- certificates section design -->
+        <section class="certificates" id="certificates">
+            <h2 class="heading">My <span>Achievements</span></h2>
+            <div class="certificates-container">
+                <div class="certificates-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>AI Project</h3>
+                    <p>My AI projects highlight three tasks: Face Detection, showcasing image processing and machine learning integration; Tic-Tac-Toe, built with an intelligent decision-making algorithm for competitive gameplay; and Rule-Based Master Game, which uses logic-based AI for dynamic responses. These projects demonstrate my expertise in Python, AI model implementation, problem-solving, and optimizing algorithms for efficiency, reflecting a strong foundation in creating innovative and functional AI-driven applications.</p>
+                    <!-- <a href="certificates\inov8.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate1()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container1" id="certificatePopup1" >
+                        <div class="certifiactePopup-content" >
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate1()"><i class='bx bx-x'></i></button>
+                            <h1>AI Project<span> Certificate</span></h1>
+                            <img src="images/1732248540881-48be316e-8364-4a7a-bab3-5cec81a99065_1.jpg"  alt="" >
+
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                </div>
+       
+                <div class="certificates-box">
+                    <i class='bx bxs-paint' ></i>
+                    <h3> Java Project </h3>
+                    <p>My Java project includes an ATM Simulation for managing account transactions, a Student Marks Calculator to compute averages and grades, and a Number Guessing Game for interactive fun with hints. It demonstrates Java skills like data handling, loops, conditional logic, and user interaction effectively.</p>
+                    <!-- <a href="certificates\mjcet.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate2()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container2" id="certificatePopup2">
+                        <div class="certifiactePopup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate2()"><i class='bx bx-x'></i></button>
+                            <h1>Java Projects <span>Certificate</span></h1>
+                            <img src="images/1732247957507-c478af03-2d07-4a50-aace-6c47b9516846_1.jpg"  alt="" >
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+            
+                    
+                </div>
+
+
+
+                    <br>
+                    <br>
+                   
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio section design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images\FaceRecognition.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">Face detection using haarcascade</h4>
+                        <p style="font-size: 140%;">Face detection using Haarcascade and DeepFace combines traditional and advanced AI techniques for robust performance.
+                        </p>
+                        <a href="https://github.com/SHASHANK-SAMALA/CodeSoft-AI-TASK5"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\tic-tac-toe.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 200%;">Tic-Tac-Toe AI game</h4>
+                        <p style="font-size: 120%;">The Tic-Tac-Toe game using the minimax algorithm ensures optimal play by evaluating possible moves, aiming to maximize the player's advantage and minimize the opponent's.</p>
+                        <a href="https://github.com/SHASHANK-SAMALA/CodeSoft-AI-TASK2"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Samala Shashank | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- typed js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- cutsom js -->
+        <script src="script.js"></script>
+    </body>
+</html>
